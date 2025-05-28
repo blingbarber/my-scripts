@@ -1,6 +1,6 @@
---loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0bbef10bf9e447aa0a04b9dac915d993.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0bbef10bf9e447aa0a04b9dac915d993.lua"))()
 
-if string.split(identifyexecutor() or "None", " ")[1] == "Xeno" then
+--[[if string.split(identifyexecutor() or "None", " ")[1] == "Xeno" then
 	getgenv().WebSocket = nil
 end
 
@@ -774,3 +774,4 @@ while ApiStatusCode ~= "KEY_VALID" do
 end
 script_key = sigmakey
 api.load_script()
+]]
