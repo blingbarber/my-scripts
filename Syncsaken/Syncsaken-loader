@@ -774,4 +774,3 @@ while ApiStatusCode ~= "KEY_VALID" do
 end
 script_key = sigmakey
 api.load_script()
-]]
