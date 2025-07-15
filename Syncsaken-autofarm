@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/who-else123/my-scripts/refs/heads/main/Syncsaken/Syncsaken-loader"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/who-else123/my-scripts/refs/heads/main/Syncsaken/main.lua"))()
 
 
 
