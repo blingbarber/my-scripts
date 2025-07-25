@@ -455,6 +455,9 @@ local function makeUI()
 			return ButtonForgot
 		end
 
+		local Lootlibs =
+			MakeKeyProviderButton("LootLabs", "89429366953434", Color3.fromRGB(60, 65, 60), Color3.fromRGB(80, 85, 80))
+
 		local Workinky =
 			MakeKeyProviderButton("WorKink", "80731952209461", Color3.fromRGB(60, 65, 60), Color3.fromRGB(80, 85, 80))
 
@@ -494,6 +497,12 @@ local function makeUI()
 				game:GetService("Debris"):AddItem(PARTICL, 0.5)
 			end
 		end
+
+		Lootlibs.Activated:Connect(function()
+			setclipboard("https://discord.gg/j8QP4uW8aj")
+			StatusLabel.Text = "Lootlabs is discontinued, please pick another option."
+			MakeParticleSystsmeWHATUNITYPARTICLESYSTEM(Lootlibs.Parent)
+		end)
 
 		Workinky.Activated:Connect(function()
 			setclipboard("https://ads.luarmor.net/get_key?for=Syncsaken__Work_Ink-mKLKlrCGjvWG")
@@ -763,4 +772,3 @@ while ApiStatusCode ~= "KEY_VALID" do
 end
 script_key = sigmakey
 api.load_script()
-]]
